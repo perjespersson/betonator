@@ -9,7 +9,8 @@
           <div class="card-body p-5">
             <form id="account" method="post">
 
-              <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+              <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-5" role="alert"></div>
+
 
               <div class="text-center mb-5">
                 <h3 class="display-6 fw-bolder mb-0"><span class="d-inline">Log in</span></h3>
@@ -34,7 +35,7 @@
               </div>
 
               <div class="d-grid mb-4">
-                <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" id="submitButton">
+                <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" id="submitButton" disabled>
                   <i class="bi bi-google me-2"></i> Log in with Google
                 </button>
               </div>
