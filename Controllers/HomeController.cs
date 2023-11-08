@@ -18,6 +18,7 @@ public class HomeController : Controller
         return View();
     }
 
+    /* TODO: Remove this route */
     public IActionResult Privacy()
     {
         return View();
