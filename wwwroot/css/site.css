@@ -4632,7 +4632,6 @@ textarea.form-control-lg {
   margin-bottom: var(--bs-alert-margin-bottom);
   color: var(--bs-alert-color);
   background-color: var(--bs-alert-bg);
-  border: var(--bs-alert-border);
   border-radius: var(--bs-alert-border-radius);
 }
 
