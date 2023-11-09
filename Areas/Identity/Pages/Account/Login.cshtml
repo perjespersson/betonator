@@ -9,10 +9,12 @@
           <div class="card-body p-5">
             <form id="account" method="post">
 
-              <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-5" role="alert"></div>
-
               <div class="text-center mb-5">
                 <h3 class="display-6 fw-bolder mb-0"><span class="d-inline">Log in</span></h3>
+              </div>
+
+              <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3 text-center text-dark" role="alert">
+                <i class="bi bi-exclamation-triangle-fill"></i>
               </div>
 
               <div class="form-floating mb-3">
@@ -32,10 +34,12 @@
                   Log in
                 </button>
               </div>
+            </form>
 
+            <form id="external-account" asp-page="./ExternalLogin" method="post" >
               <div class="d-grid mb-4">
-                <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" id="submitButton" disabled>
-                  <i class="bi bi-google me-2"></i> Log in with Google
+                <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" name="provider" value="Google"  type="submit">
+                  <i class="bi bi-google"></i> Log in with Google
                 </button>
               </div>
             </form>
@@ -43,19 +47,19 @@
         </div>
 
         <div class="d-grid">
-          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" id="forgot-password" asp-page="./ForgotPassword">
+          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" asp-page="./ForgotPassword">
             Forgot password?
           </a>
         </div>
 
         <div class="d-grid">
-          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" id="submitButton" asp-page="./Register">
+          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" asp-page="./Register">
             Register
           </a>
         </div>
 
         <div class="d-grid">
-          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" id="submitButton" asp-page="./ResendEmailConfirmation">
+          <a class="btn btn-link btn-lg px-5 fs-6 fw-bolder text-decoration-none" asp-page="./ResendEmailConfirmation">
             Resend email confirmation
           </a>
         </div>
